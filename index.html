@@ -1,0 +1,860 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>MONOLITH. — La guía digital para principiantes (Edición 002)</title><style>:root { --host-bg: rgb(14, 18, 23); --host-fg: rgb(238, 237, 228); --host-fg-muted: rgb(162, 166, 170); --host-card: rgba(255, 255, 255, 0.04); --host-card-fg: rgb(238, 237, 228); --host-input: rgba(255, 255, 255, 0.04); --host-muted: rgba(255, 255, 255, 0.04); --host-border: rgba(255, 255, 255, 0.06); --host-border-hover: rgba(255, 255, 255, 0.12); --host-primary: rgb(18, 92, 161); --host-secondary: rgba(255, 255, 255, 0.04); --host-secondary-fg: rgb(238, 237, 228); --host-success: #22c55e; --host-error: #ef4444; } * { box-sizing: border-box; margin: 0; padding: 0; } :root, html, body { width: 100%; max-width: 100%; height: auto; overflow-x: hidden; overflow-y: visible; background: transparent; font-family: Inter, system-ui, -apple-system, sans-serif; } #sandbox-content { width: 100%; } @media (max-width: 640px) { :where(#sandbox-content svg, #sandbox-content img) { max-width: 100%; height: auto; } } </style></head><body><div id="book">
+
+<section class="page cover">
+  <div class="top">Digital Knowledge Studio — Edición 002 · 2026</div>
+  <div>
+    <h1>MONO<span class="dot">.</span>LITH<span class="dot">.</span></h1>
+    <div class="rule"></div>
+    <div class="sub">La guía digital para principiantes</div>
+    <div class="tag">Tu primera idea. Tu primer producto. Tu primer negocio digital.</div>
+  </div>
+  <div class="bottom"><span>Build your next chapter.</span><span>Monolith. / 002</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Créditos</span></div>
+  <p class="kicker" style="margin-top:60px">Publicación</p>
+  <h2 style="font-size:22px">La guía digital para principiantes</h2>
+  <p class="small" style="margin-bottom:26px">Edición 002 — revisada y ampliada. Publicado por MONOLITH. DIGITAL KNOWLEDGE STUDIO.</p>
+  <p class="small">Todos los derechos reservados. Ninguna parte de esta publicación puede reproducirse, distribuirse ni transmitirse en forma alguna sin permiso previo por escrito del editor, salvo citas breves incorporadas en reseñas críticas y otros usos no comerciales permitidos por la legislación vigente sobre derechos de autor.</p>
+  <div class="warn" style="margin-top:26px">
+    <span class="lbl">Aviso editorial y descargo de responsabilidad</span>
+    Esta obra tiene fines exclusivamente educativos e informativos. No constituye asesoramiento financiero, fiscal, contable ni jurídico. Los resultados empresariales dependen del esfuerzo individual, las condiciones del mercado, la calidad de ejecución y factores externos imprevisibles. Las referencias normativas citadas corresponden a la Unión Europea y a España y se indican con su fecha; <strong>la normativa cambia y varía por jurisdicción</strong>, por lo que debe verificarse en fuentes oficiales antes de actuar. Los casos marcados como «Caso ilustrativo» son ejemplos pedagógicos ficticios.
+  </div>
+  <h3 style="margin-top:34px">Nota sobre esta edición</h3>
+  <p class="small">La edición 001 tenía una estructura sólida y una extensión contenida. Esta edición conserva los trece capítulos y la identidad editorial original, y trabaja sobre cuatro frentes: <strong>corrección</strong> de los cálculos de rentabilidad y de las afirmaciones legales, <strong>profundidad</strong> en los capítulos que se quedaban en el enunciado, <strong>trazabilidad</strong> de fuentes y <strong>herramientas aplicables</strong>. Se ha corregido en particular la confusión entre margen bruto y beneficio neto, la presentación de rangos de precios como si fueran estadísticas y el tratamiento del derecho de desistimiento.</p>
+  <p class="small" style="margin-top:14px">Cada cifra monetaria del libro es un ejemplo aritmético explícito, no una previsión. Cada afirmación que requiere respaldo remite a la página de referencias.</p>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>02</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Índice</span></div>
+  <p class="kicker">Contenidos</p>
+  <h2 style="margin-bottom:4px">Índice</h2>
+  <p class="small" style="margin-bottom:22px">Trece capítulos, cuatro herramientas, un glosario y las referencias verificables.</p>
+  <div class="toc-part">Parte I — Fundamentos</div>
+  <div class="toc-row"><span class="n">01</span><span class="t">Comprender la oportunidad digital<span>Fundamentos, coste marginal y expectativas realistas</span></span><span class="p">05</span></div>
+  <div class="toc-row"><span class="n">02</span><span class="t">El mapa de los negocios digitales<span>Modelos, escalera de valor e infraestructura mínima</span></span><span class="p">07</span></div>
+  <div class="toc-row"><span class="n">03</span><span class="t">Encontrar tu primera idea<span>Habilidad, fricción y capacidad de pago</span></span><span class="p">09</span></div>
+  <div class="toc-part">Parte II — Verificación</div>
+  <div class="toc-row"><span class="n">04</span><span class="t">Investigación de mercado y competencia<span>Señales de demanda y análisis competitivo</span></span><span class="p">11</span></div>
+  <div class="toc-row"><span class="n">05</span><span class="t">Validar antes de producir<span>La escalera de evidencia: de la visita al pago</span></span><span class="p">13</span></div>
+  <div class="toc-part">Parte III — Producción</div>
+  <div class="toc-row"><span class="n">06</span><span class="t">Construir con inteligencia artificial<span>Usos legítimos, control de calidad y trazabilidad</span></span><span class="p">15</span></div>
+  <div class="toc-row"><span class="n">07</span><span class="t">Diseñar una oferta clara<span>Anatomía de la oferta y páginas honestas</span></span><span class="p">17</span></div>
+  <div class="toc-part">Parte IV — Dinero y visibilidad</div>
+  <div class="toc-row"><span class="n">08</span><span class="t">Precios, márgenes y punto de equilibrio<span>Del margen bruto al beneficio real</span></span><span class="p">19</span></div>
+  <div class="toc-row"><span class="n">09</span><span class="t">Marketing sin presupuesto<span>Contenido, correo y conversión medible</span></span><span class="p">22</span></div>
+  <div class="toc-row"><span class="n">10</span><span class="t">Una marca digital sencilla<span>Identidad, coherencia y estándares</span></span><span class="p">24</span></div>
+  <div class="toc-part">Parte V — Ejecución</div>
+  <div class="toc-row"><span class="n">11</span><span class="t">Once errores y su antídoto<span>Gestión de riesgos operativos</span></span><span class="p">26</span></div>
+  <div class="toc-row"><span class="n">12</span><span class="t">Plan de acción de 30 días<span>Hoja de ruta diaria</span></span><span class="p">28</span></div>
+  <div class="toc-row"><span class="n">13</span><span class="t">Reflexiones finales<span>Sostenibilidad y siguiente capítulo</span></span><span class="p">30</span></div>
+  <div class="toc-part">Aparato práctico</div>
+  <div class="toc-row"><span class="n">A</span><span class="t">Herramienta 1 — Ficha de investigación de competidores</span><span class="p">31</span></div>
+  <div class="toc-row"><span class="n">B</span><span class="t">Herramienta 2 — Calculadora de rentabilidad</span><span class="p">32</span></div>
+  <div class="toc-row"><span class="n">C</span><span class="t">Herramienta 3 — Evaluación de ideas</span><span class="p">34</span></div>
+  <div class="toc-row"><span class="n">D</span><span class="t">Herramienta 4 — Checklist de lanzamiento</span><span class="p">35</span></div>
+  <div class="toc-row"><span class="n">E</span><span class="t">Glosario · Referencias · Texto de venta</span><span class="p">36</span></div>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>03</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Nota del editor</span></div>
+  <p class="kicker">Antes de empezar</p>
+  <h2>Cómo usar esta guía</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">Este libro se lee con un cuaderno al lado y se ejecuta con un calendario. No está pensado para acumularse en una carpeta de descargas.</p>
+  <p>Cada capítulo sigue la misma arquitectura: un problema real, una explicación breve de por qué ocurre, un método, y una sección de <strong>«Lo que te llevas»</strong> con los puntos que deben quedar cerrados antes de avanzar. Las herramientas del final existen para que no tengas que inventar la parte operativa.</p>
+  <h3>Tres reglas de lectura</h3>
+  <ol>
+    <li><strong>Un capítulo, una sesión.</strong> Si no puedes cerrar el ejercicio de un capítulo, no abras el siguiente. El avance real no es la lectura, es el cierre.</li>
+    <li><strong>Escribe las cifras.</strong> Todo lo económico se trabaja con números propios, aunque sean malos. Un negocio digital se rompe en la hoja de cálculo antes de romperse en el banco.</li>
+    <li><strong>Verifica lo local.</strong> Cuando aparezca un requisito fiscal o legal, compruébalo. La guía te dice <em>qué</em> preguntar; no sustituye a quien te lo responde por escrito.</li>
+  </ol>
+  <div class="box">
+    <span class="lbl">Lo que esta guía no hace</span>
+    No promete ingresos, no da por hecho que tienes empresa, capital ni experiencia técnica, y no presenta ningún dato de mercado como verdad universal. Cuando un rango de precios o una tasa de conversión aparece, se indica si es una <strong>observación de mercado</strong>, una <strong>heurística de trabajo</strong> o simplemente un <strong>ejemplo aritmético</strong>.
+  </div>
+  <h3>Perfil del lector</h3>
+  <p>Personas que empiezan de cero y quieren entender cómo se construye un negocio digital pequeño sin humo: profesionales que quieren empaquetar lo que ya saben, personas en transición laboral, estudiantes y autónomos que buscan una segunda línea de ingresos. No se requiere conocimiento previo de marketing, diseño, programación ni contabilidad.</p>
+  <h3>Convenciones tipográficas</h3>
+  <table>
+    <tbody><tr><td style="width:150px"><strong>Caso ilustrativo</strong></td><td>Escenario ficticio con cifras explícitas. Sirve para razonar, no como dato de mercado.</td></tr>
+    <tr><td><strong>Concepto clave</strong></td><td>Definición necesaria para el resto del capítulo.</td></tr>
+    <tr><td><strong>Aviso</strong></td><td>Punto donde la práctica habitual falla o donde la norma cambia por país.</td></tr>
+    <tr><td><strong>Lo que te llevas</strong></td><td>Cierre del capítulo: los entregables antes de continuar.</td></tr>
+  </tbody></table>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>04</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 01</span></div>
+  <p class="kicker">Parte I — Fundamentos</p>
+  <div class="chapnum">01</div>
+  <h2>Comprender la oportunidad digital</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">Montar un negocio solía exigir local, inventario y una cadena de suministro. Hoy una persona con un portátil puede empaquetar conocimiento y distribuirlo. Lo que no ha cambiado es lo demás: sigue haciendo falta resolver un problema concreto para gente que paga.</p>
+  <p>La infraestructura digital ha bajado el coste de <em>empezar</em>, no el coste de <em>acertar</em>. Esa distinción ordena todo el libro. Empezar es barato; acertar exige investigación, criterio y tolerancia a corregir.</p>
+  <h3>Qué es exactamente un negocio digital</h3>
+  <p>Un negocio digital identifica una necesidad recurrente y la satisface con un producto o servicio entregado total o parcialmente por internet. La palabra clave es <em>recurrente</em>: si el problema ocurre una vez y no vuelve, no hay negocio, hay un encargo.</p>
+  <div class="box">
+    <span class="lbl">Concepto clave — Coste marginal de reproducción</span>
+    Es el gasto adicional de producir y entregar una unidad más. En un producto físico incluye materia prima y logística. En un producto digital bien montado se reduce a la comisión de la pasarela de pago y al alojamiento del archivo. Ese coste casi nulo es la ventaja estructural del formato; también es la razón por la que el mercado se llena de productos mediocres. La barrera de entrada baja no protege de nada.
+  </div>
+  <h3>Las tres cuentas que debes saber hacer</h3>
+  <p>Antes de la primera idea, conviene tener claros los tres recursos que vas a gastar. Casi todos los abandonos se explican por no haberlos contado:</p>
+  <table>
+    <tbody><tr><th style="width:110px">Recurso</th><th>Pregunta que resuelve</th><th>Cómo se cuenta</th></tr>
+    <tr><td><strong>Horas</strong></td><td>¿Cuánto tiempo real y sostenible tengo cada semana?</td><td>Bloques de 60–90 min en la agenda, no «ratos libres».</td></tr>
+    <tr><td><strong>Dinero</strong></td><td>¿Cuánto puedo perder sin que me afecte?</td><td>Presupuesto cerrado para dominio, herramientas y pruebas.</td></tr>
+    <tr><td><strong>Riesgo</strong></td><td>¿Qué pasa si en 90 días no hay ventas?</td><td>Qué pierdo, qué aprendo y qué decisión tomo entonces.</td></tr>
+  </tbody></table>
+  <h3>Expectativas: lo que sí y lo que no</h3>
+  <p><strong>No.</strong> No hay ingresos automáticos ni pasivos sin trabajo previo. Un producto digital requiere horas concentradas de investigación, producción y venta, y las primeras semanas casi siempre producen más aprendizaje que facturación.</p>
+  <p><strong>Sí.</strong> Un producto pequeño que resuelve una urgencia concreta supera a un curso extenso que intenta abarcarlo todo. La confianza se construye antes de la primera venta, con muestras gratuitas útiles y explicaciones claras. Y el activo que más crece no es el archivo: es la reputación de hacer las cosas bien.</p>
+  <blockquote>Un negocio digital pequeño y honesto rara vez fracasa por falta de talento. Fracasa por construir antes de comprobar, y por vender antes de explicar.</blockquote>
+  <div class="ex">
+    <span class="lbl">Ejercicio 01 — Auditoría de punto de partida · 20 minutos</span>
+    Responde por escrito antes de pasar al capítulo 2:
+    <ol>
+      <li>¿Cuántas horas semanales puedo comprometer durante 30 días sin romper mis obligaciones actuales?</li>
+      <li>¿Cuál es mi presupuesto máximo para herramientas, y de dónde sale?</li>
+      <li>¿Qué tres temas domino lo suficiente para explicarlos paso a paso a un principiante?</li>
+      <li>¿Qué significa para mí «esto no funciona» y cuándo lo decidiré?</li>
+    </ol>
+  </div>
+  <div class="box"><span class="lbl">Lo que te llevas</span>Tres cifras escritas (horas, dinero, riesgo), cuatro respuestas y una decisión: sigues o ajustas el alcance antes de empezar.</div>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>05</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 02</span></div>
+  <p class="kicker">Parte I — Fundamentos</p>
+  <div class="chapnum">02</div>
+  <h2>El mapa de los negocios digitales</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">Antes de elegir qué construir, conviene saber qué formas existen, cuánto soporte exige cada una y cuál encaja con tu tiempo disponible. Elegir mal el formato es más caro que elegir mal el tema.</p>
+  <table>
+    <tbody><tr><th style="width:120px">Modelo</th><th>Qué es</th><th>Ventaja real</th><th>Límite real</th></tr>
+    <tr><td><strong>Ebook y guía</strong></td><td>Manual estructurado en PDF o EPUB que resuelve un problema acotado</td><td>Producción rápida; se puede escribir en solitario</td><td>Sensible al precio; exige calidad de redacción alta</td></tr>
+    <tr><td><strong>Plantilla</strong></td><td>Hoja de cálculo, sistema en Notion o flujo listo para duplicar</td><td>Ahorra tiempo de forma medible</td><td>Necesita documentación clara o genera dudas de uso</td></tr>
+    <tr><td><strong>Microherramienta de IA</strong></td><td>Paquete de instrucciones probadas para una tarea profesional</td><td>Alto valor percibido por unidad de esfuerzo</td><td>Obsolescencia rápida si cambian los modelos</td></tr>
+    <tr><td><strong>Servicio online</strong></td><td>Consultoría, redacción, diseño o edición remota</td><td>Flujo de caja inmediato, sin audiencia previa</td><td>Ingresos atados a tus horas</td></tr>
+    <tr><td><strong>Contenido educativo</strong></td><td>Boletín, canal o blog monetizado por patrocinio o producto propio</td><td>Construye audiencia y autoridad</td><td>Meses de publicación constante antes de monetizar</td></tr>
+    <tr><td><strong>Suscripción</strong></td><td>Acceso recurrente a biblioteca, actualizaciones o comunidad</td><td>Ingreso previsible</td><td>Obligación de novedad y soporte continuo</td></tr>
+  </tbody></table>
+  <p class="small">Ningún modelo es superior en abstracto. La suscripción es peor primera opción que el servicio puntual si no tienes audiencia ni catálogo.</p>
+  <h3>La escalera de valor</h3>
+  <p>La ruta más prudente para un principiante empieza por un servicio acotado o una plantilla simple. Al trabajar con tus primeros cinco o diez clientes ves dónde se atascan, qué preguntan y con qué palabras nombran el problema. Ese material se convierte después en un producto empaquetado. Vendes primero la versión artesanal de lo que luego será el archivo.</p>
+  <div class="case">
+    <span class="lbl">Caso ilustrativo — De servicio puntual a plantilla replicable</span>
+    <em>Ejemplo ficticio con fines educativos.</em> Elena, administrativa con experiencia en clínicas dentales pequeñas, vio que varios consultorios gestionaban citas e inventario en cuadernos. Ofreció configurar hojas de cálculo a 120 € por clínica. Tras cuatro clientes (480 € facturados) detectó que <strong>tres de las cuatro estructuras eran casi idénticas</strong> —dato de su propia muestra, no del mercado— y que las dudas se repetían. Empaquetó la base con un manual de 12 páginas y la puso a 29 € para clínicas de otras ciudades. El servicio siguió existiendo a 120 € para quien quería configuración; el archivo capturaba a quien no.
+  </div>
+  <h3>Infraestructura mínima</h3>
+  <p>Cuatro piezas, ninguna opcional:</p>
+  <ul class="clean">
+    <li><strong>Escaparate:</strong> plataforma de productos digitales que gestione entrega y cálculo de impuestos indirectos.</li>
+    <li><strong>Cobro:</strong> pasarela integrada para tarjeta y, si aplica, transferencia.</li>
+    <li><strong>Canal propio:</strong> correo profesional y herramienta de boletín.</li>
+    <li><strong>Producción:</strong> procesador de texto, editor de diseño o software de hojas de cálculo.</li>
+  </ul>
+  <div class="warn">
+    <span class="lbl">Aviso — Antes de cobrar el primer euro</span>
+    Alta de actividad, encuadramiento en la Seguridad Social, obligaciones de IVA y facturación, y deberes de información al consumidor. Los requisitos, umbrales y regímenes <strong>dependen del país</strong> y del tipo de actividad. Consúltalos con un gestor o con la administración tributaria correspondiente antes de publicar precios.
+  </div>
+  <div class="box"><span class="lbl">Lo que te llevas</span>Un modelo elegido por escrito, una razón para ese modelo y las cuatro piezas de infraestructura identificadas con su coste mensual.</div>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>06</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 03</span></div>
+  <p class="kicker">Parte I — Fundamentos</p>
+  <div class="chapnum">03</div>
+  <h2>Encontrar tu primera idea</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">El error más común es buscar algo inédito. En mercado digital, la originalidad radical obliga a educar al cliente desde cero. Es más rentable mejorar, simplificar o adaptar algo que ya existe para un público mal atendido.</p>
+  <h3>El marco de intersección</h3>
+  <p>Una idea viable nace donde coinciden tres variables. Si falta una, no hay producto: hay afición.</p>
+  <table>
+    <tbody><tr><th style="width:34px">V</th><th>Variable</th><th>Qué significa en la práctica</th></tr>
+    <tr><td class="num">1</td><td><strong>Conocimiento aplicable</strong></td><td>Algo que haces mejor que el principiante medio, o un proceso que estás dispuesto a investigar y sintetizar con rigor.</td></tr>
+    <tr><td class="num">2</td><td><strong>Fricción recurrente</strong></td><td>Una tarea tediosa, confusa o costosa en tiempo que otros enfrentan con frecuencia.</td></tr>
+    <tr><td class="num">3</td><td><strong>Capacidad de pago</strong></td><td>Un perfil que obtiene beneficio claro —tiempo, dinero, cumplimiento, empleo— al resolver esa fricción.</td></tr>
+  </tbody></table>
+  <p>La tercera variable es la que más se ignora. Un problema apasionante para estudiantes sin ingresos puede ser un producto de 9 €; el mismo problema para autónomos que facturan puede sostener 39 €. No es mejor idea la más interesante: es la que tiene a alguien al otro lado con presupuesto y motivo.</p>
+  <h3>Cuatro fuentes que sí producen ideas</h3>
+  <ul class="clean">
+    <li><strong>Tu historial:</strong> procedimientos, listas de control, presupuestos o guías de incorporación que ya creaste para otros.</li>
+    <li><strong>Las consultas de tu entorno:</strong> los temas por los que te escriben amigos, colegas o compañeros de sector de forma repetida.</li>
+    <li><strong>Procesos que dominaste:</strong> preparar oposiciones, ordenar finanzas domésticas, pasar a trabajo remoto, manejar un software difícil.</li>
+    <li><strong>Subnichos desatendidos:</strong> «gestión del tiempo» compite con miles de libros; «planificación semanal para jefes de obra con varias obras abiertas» habla a un grupo identificable.</li>
+  </ul>
+  <h3>El filtro de las cuatro preguntas</h3>
+  <p>Antes de dar una idea por buena, respóndela por escrito. Una sola respuesta «no» la degrada a candidata secundaria:</p>
+  <ol>
+    <li>¿Quién exactamente tiene este problema esta misma semana?</li>
+    <li>¿Qué hace hoy para resolverlo y por qué le resulta insuficiente?</li>
+    <li>¿De qué bolsillo sale el dinero: personal, de empresa, de formación?</li>
+    <li>¿Puedo entregar una primera versión útil en menos de 20 horas de trabajo?</li>
+  </ol>
+  <div class="ex">
+    <span class="lbl">Ejercicio 02 — Matriz de generación de ideas</span>
+    Rellena cinco filas. La última columna es la prueba de realidad: si no puedes describir un resultado tangible, la idea aún no está madura.
+    <table style="margin-top:10px;background:#1a1a18">
+      <tbody><tr><th style="color:#8f8f8a;border-color:#4a4a46">Problema concreto</th><th style="color:#8f8f8a;border-color:#4a4a46">Público específico</th><th style="color:#8f8f8a;border-color:#4a4a46">Formato</th><th style="color:#8f8f8a;border-color:#4a4a46">Resultado tangible</th></tr>
+      <tr><td style="color:#cfcfca;border-color:#33332f">Dificultad para fijar tarifas</td><td style="color:#cfcfca;border-color:#33332f">Diseñadores junior</td><td style="color:#cfcfca;border-color:#33332f">Calculadora + guía</td><td style="color:#cfcfca;border-color:#33332f">Presupuesto listo en 15 min</td></tr>
+      <tr><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td></tr>
+      <tr><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td></tr>
+      <tr><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td></tr>
+      <tr><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td><td style="color:#cfcfca;border-color:#33332f">&nbsp;</td></tr>
+    </tbody></table>
+  </div>
+  <div class="box"><span class="lbl">Lo que te llevas</span>Cinco candidatas con público y resultado tangible, y dos finalistas elegidas con el filtro de cuatro preguntas. No más.</div>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>07</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 04</span></div>
+  <p class="kicker">Parte II — Verificación</p>
+  <div class="chapnum">04</div>
+  <h2>Investigación de mercado y competencia</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">Que existan competidores no es una mala señal: significa que ya hay gente pagando en esa categoría. La pregunta no es «¿hay competencia?» sino «¿qué está mal resuelto y a quién le importa?».</p>
+  <h3>Señales de demanda con herramientas gratuitas</h3>
+  <p>Ninguna señal aislada demuestra demanda. Se leen en conjunto.</p>
+  <ul class="clean">
+    <li><strong>Autocompletado:</strong> escribe el tema seguido de «plantilla», «guía», «cómo hacer» o «para principiantes» en Google, YouTube, Amazon y Etsy. Las sugerencias reflejan búsquedas reales.</li>
+    <li><strong>Minería de reseñas de 1 a 3 estrellas:</strong> «demasiado teórico», «sin ejemplos», «desactualizado», «imposible de configurar». Cada queja repetida es un requisito de diseño.</li>
+    <li><strong>Foros y comunidades:</strong> Reddit, grupos profesionales, foros sectoriales. Anota las palabras literales con las que describen la frustración: ese vocabulario alimenta tu página de ventas.</li>
+    <li><strong>Volumen de anuncios:</strong> si alguien invierte en publicidad sostenida sobre ese nicho, hay margen que lo sostiene.</li>
+  </ul>
+  <div class="warn">
+    <span class="lbl">Aviso — Lo que estas señales no dicen</span>
+    Ver muchas búsquedas o muchos productos no indica cuánto se vende ni a qué precio. La mayoría de plataformas no publica unidades vendidas. Las valoraciones y el «más vendido» son indicios, no cifras. Trata todo dato de terceros como aproximación y nunca lo presentes en tu propia página como estadística si no puedes citar la fuente.
+  </div>
+  <h3>Matriz competitiva</h3>
+  <p>Analiza entre tres y cinco ofertas reales con la Herramienta 1 del apéndice. La columna que decide es la última: <em>hueco explotable</em>. Si no aparece ninguno, la categoría está cubierta y conviene mover el ángulo.</p>
+  <div class="case">
+    <span class="lbl">Caso ilustrativo — Detección de brecha</span>
+    <em>Ejemplo ficticio con fines educativos.</em> Marcos quería vender una plantilla de gastos personales. De diez plantillas populares, <strong>nueve estaban diseñadas para nómina fija mensual</strong> —observación de su muestra—. En foros de autónomos encontró consultas repetidas sobre ingresos irregulares y reserva trimestral de IVA e IRPF. Reorientó el producto a «Control financiero para ingresos variables» y dejó de competir por precio: competía por encaje.
+  </div>
+  <h3>Qué mirar en cada competidor</h3>
+  <table>
+    <tbody><tr><th style="width:130px">Criterio</th><th>Qué revela</th></tr>
+    <tr><td>Promesa principal</td><td>El resultado que promete y a quién se dirige.</td></tr>
+    <tr><td>Formato y profundidad</td><td>Cuánto entrega realmente y cuánto es relleno.</td></tr>
+    <tr><td>Precio y estructura</td><td>Posicionamiento y si usa escalones.</td></tr>
+    <tr><td>Prueba social</td><td>Volumen y contenido de reseñas; qué elogian y qué no.</td></tr>
+    <tr><td>Carencias evidentes</td><td>Lo que el comprador echa de menos y el vendedor no corrige.</td></tr>
+  </tbody></table>
+  <div class="ex">
+    <span class="lbl">Cierre del capítulo — Tres casillas antes de avanzar</span>
+    ☐ He identificado 3 productos similares con reseñas o ventas activas.<br>
+    ☐ He anotado las 5 quejas más repetidas de sus compradores.<br>
+    ☐ He escrito en una frase qué hará mi producto de forma más clara, sencilla o especializada.
+  </div>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>08</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 05</span></div>
+  <p class="kicker">Parte II — Verificación</p>
+  <div class="chapnum">05</div>
+  <h2>Validar antes de producir</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">Validar es conseguir evidencia de interés antes de invertir semanas en el producto definitivo. Protege tu recurso más escaso: las horas.</p>
+  <h3>La escalera de evidencia</h3>
+  <p>No todas las señales valen lo mismo. De menor a mayor:</p>
+  <table>
+    <tbody><tr><th style="width:30px">N.</th><th>Señal</th><th>Qué demuestra</th><th style="width:110px">Orden de magnitud</th></tr>
+    <tr><td class="num">1</td><td>Visitas a una página</td><td>Cierto atractivo del mensaje</td><td>—</td></tr>
+    <tr><td class="num">2</td><td>Suscripción por correo</td><td>Interés declarado con coste bajo</td><td>1–5 % de visitas</td></tr>
+    <tr><td class="num">3</td><td>Respuesta a encuesta o entrevista</td><td>Implicación con tiempo</td><td>Muy variable</td></tr>
+    <tr><td class="num">4</td><td>Reserva sin pago</td><td>Intención fuerte, aún gratuita</td><td>Baja</td></tr>
+    <tr><td class="num">5</td><td><strong>Pago, aunque sea reducido</strong></td><td>Demanda real</td><td>1–3 % de una lista tibia</td></tr>
+  </tbody></table>
+  <p class="small">Los porcentajes son heurísticas de trabajo para dimensionar expectativas, no estadísticas universales. Varían por nicho, canal y calidad de la oferta.</p>
+  <div class="box">
+    <span class="lbl">Concepto clave — Lista de correos ≠ demanda</span>
+    Una lista demuestra atención, no disposición a pagar. Mil suscriptores captados con un imán gratuito pueden convertir a cero si el producto no encaja con lo que ese imán prometió. La lista solo se convierte en prueba cuando una parte paga. Hasta entonces es una hipótesis con contactos.
+  </div>
+  <h3>Tres métodos de bajo riesgo</h3>
+  <ol>
+    <li><strong>Contenido mínimo.</strong> Publica un recurso gratuito de dos páginas que resuelva una fracción del problema. Mide descargas, guardados y preguntas. Las preguntas concretas son la mejor señal: indican que el tema importa y que aún hay hueco.</li>
+    <li><strong>Entrevistas de descubrimiento.</strong> Diez minutos con cinco a diez personas del perfil. No vendas durante la llamada. Pregunta cómo lo resuelven hoy, cuánto les cuesta y qué han probado. Si describes tu solución antes de que la pidan, contaminas la respuesta.</li>
+    <li><strong>Preventa transparente.</strong> Página con índice exacto, fecha de entrega (por ejemplo, 14 días) y precio reducido por reserva. Si nadie reserva tras mostrarla a un grupo relevante, ajusta el enfoque antes de escribir el resto.</li>
+  </ol>
+  <div class="warn">
+    <span class="lbl">Aviso — Preventa y dinero de terceros</span>
+    Si cobras antes de entregar, informa de la fecha de entrega y de qué ocurre si te retrasas. En la Unión Europea, la venta a consumidores está sujeta a deberes de información previa y a las reglas sobre ejecución del contrato. Revisa también las condiciones de tu pasarela sobre cobros anticipados.
+  </div>
+  <h3>Cuándo la validación dice «no»</h3>
+  <p>Define el umbral antes de medir, o interpretarás cualquier dato como éxito. Un criterio razonable para un primer test: <strong>de 100 personas del perfil contactadas, menos de 3 reservan o pagan → reformular el problema, no el texto.</strong> Si entre 3 y 8 responden con interés real, sigue con ajustes. Si superan 8, produce.</p>
+  <blockquote>Los cumplidos no son validación. Lo es un desconocido que gasta correo, tiempo o dinero.</blockquote>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>09</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 06</span></div>
+  <p class="kicker">Parte III — Producción</p>
+  <div class="chapnum">06</div>
+  <h2>Construir con inteligencia artificial</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">La IA generativa acelera la producción de quien ya sabe qué quiere. Usada como sustituto del criterio, produce documentos correctos y olvidables.</p>
+  <h3>Usos que sí aportan</h3>
+  <ul class="clean">
+    <li><strong>Arquitectura:</strong> proponer estructuras, detectar lagunas en un índice, reordenar notas dispersas.</li>
+    <li><strong>Edición:</strong> simplificar párrafos técnicos, revisar coherencia, ajustar el tono, generar resúmenes.</li>
+    <li><strong>Material de partida:</strong> variantes de ejemplos y borradores de listas que luego verificas.</li>
+    <li><strong>Productos basados en flujos:</strong> paquetes de instrucciones probadas para tareas concretas.</li>
+  </ul>
+  <h3>Los tres filtros obligatorios</h3>
+  <ol>
+    <li><strong>Verificación factual.</strong> Los modelos inventan cifras, citas y normas. Cada dato, fecha y requisito legal se comprueba en fuente primaria. Un número sin fuente en un PDF es una promesa más.</li>
+    <li><strong>Experiencia propia.</strong> Añade criterios, advertencias, plantillas reales y matices que solo tiene quien ha ejecutado el proceso. Es lo único que un competidor no puede copiar con un prompt.</li>
+    <li><strong>Propiedad intelectual y transparencia.</strong> Respeta las condiciones de uso de cada herramienta y la normativa de derechos de autor aplicable. Declara el uso de IA cuando sea relevante para el lector.</li>
+  </ol>
+  <div class="warn">
+    <span class="lbl">Aviso — Obligaciones de transparencia</span>
+    El Reglamento (UE) 2024/1689 de inteligencia artificial prevé deberes de información, entre ellos marcar determinados contenidos generados o manipulados artificialmente. Las obligaciones se aplican de forma escalonada en el tiempo y admiten matices según el caso. Si publicas contenido sintético de forma profesional, revisa el estado vigente del reglamento y la guía de la autoridad nacional competente.
+  </div>
+  <h3>Un flujo de trabajo realista</h3>
+  <table>
+    <tbody><tr><th style="width:34px">#</th><th>Paso</th><th>Quién decide</th></tr>
+    <tr><td class="num">1</td><td>Fijar índice y resultado por capítulo</td><td>Tú</td></tr>
+    <tr><td class="num">2</td><td>Borrador de estructura y ejemplos candidatos</td><td>IA</td></tr>
+    <tr><td class="num">3</td><td>Verificar datos, cálculos y referencias</td><td>Tú, en fuente primaria</td></tr>
+    <tr><td class="num">4</td><td>Reescribir con tu voz y añadir experiencia</td><td>Tú</td></tr>
+    <tr><td class="num">5</td><td>Edición final y prueba con un lector del perfil</td><td>Tú</td></tr>
+  </tbody></table>
+  <p class="small">Regla práctica: si un párrafo no aporta nada que no estuviera ya en el borrador, es relleno. Bórralo.</p>
+  <div class="box"><span class="lbl">Prueba de autenticidad</span>Antes de publicar, marca los tres pasajes de los que puedes decir «esto solo lo sé yo, porque lo he hecho». Si no encuentras tres, el producto aún es genérico.</div>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>10</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 07</span></div>
+  <p class="kicker">Parte III — Producción</p>
+  <div class="chapnum">07</div>
+  <h2>Diseñar una oferta clara</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">Un producto es el archivo que entregas. Una oferta es el conjunto de resultado, formato, apoyos, alcance y condiciones que hace comprensible por qué vale la pena. Se puede tener un buen producto y una oferta ilegible.</p>
+  <table>
+    <tbody><tr><th style="width:120px">Elemento</th><th>Función</th><th>Ejemplo aplicado</th></tr>
+    <tr><td><strong>Titular de resultado</strong></td><td>Qué logrará el cliente y para quién</td><td>«Sistema de contabilidad básica en hojas de cálculo para autónomos»</td></tr>
+    <tr><td><strong>Producto central</strong></td><td>El activo que resuelve el problema</td><td>Plantilla de ingresos, gastos e impuestos trimestrales</td></tr>
+    <tr><td><strong>Aceleradores</strong></td><td>Reducen la fricción de uso</td><td>Guía de 10 páginas + vídeo de 8 minutos</td></tr>
+    <tr><td><strong>Alcance explícito</strong></td><td>Evita malentendidos</td><td>Compatible con Excel y Google Sheets; no sustituye asesoría fiscal</td></tr>
+    <tr><td><strong>Condiciones</strong></td><td>Reduce el riesgo percibido</td><td>Garantía comercial de reembolso según términos publicados</td></tr>
+  </tbody></table>
+  <h3>La página de producto, en orden</h3>
+  <ol>
+    <li>El problema cotidiano, en las palabras del lector.</li>
+    <li>El estado deseado tras aplicar el método.</li>
+    <li>Contenido exacto, en puntos concretos.</li>
+    <li>Capturas reales del interior del archivo.</li>
+    <li>Qué incluye y qué no incluye.</li>
+    <li>Precio, condiciones de entrega y garantía.</li>
+    <li>Preguntas frecuentes sobre compatibilidad y soporte.</li>
+  </ol>
+  <h3>Garantías y devoluciones: lo que hay que precisar</h3>
+  <p>Aquí es donde más se simplifica de más. Una «garantía de 14 días» es una <strong>política comercial</strong> que el vendedor elige ofrecer. No es lo mismo que el <strong>derecho de desistimiento</strong> del consumidor en la Unión Europea, que tiene su propia lógica y sus propias excepciones.</p>
+  <table>
+    <tbody><tr><th style="width:170px">Figura</th><th>Qué es</th><th>Punto crítico</th></tr>
+    <tr><td><strong>Derecho de desistimiento</strong></td><td>Facultad legal del consumidor de resolver una compra a distancia en plazo</td><td>En contenidos digitales sin soporte material puede perderse si se empieza a descargar o usar tras consentimiento expreso e información previa</td></tr>
+    <tr><td><strong>Garantía comercial</strong></td><td>Compromiso voluntario del vendedor, más favorable que la ley</td><td>Hay que redactar condiciones claras y cumplirlas; no puede vaciar el derecho legal</td></tr>
+    <tr><td><strong>Conformidad</strong></td><td>Respuesta legal ante contenido defectuoso o no ajustado a lo descrito</td><td>Es independiente de la política comercial</td></tr>
+  </tbody></table>
+  <div class="warn">
+    <span class="lbl">Aviso — Depende de la jurisdicción</span>
+    Lo anterior resume el marco de la UE (Directiva 2011/83/UE, art. 16 y Directiva 2019/770; en España, arts. 102 y siguientes del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios). Plazos, excepciones y deberes de información <strong>varían por país</strong> y por tipo de comprador. Redacta tu política con asesoramiento local y publícala antes de la compra.
+  </div>
+  <div class="box"><span class="lbl">Lo que te llevas</span>Los cinco elementos de tu oferta escritos, una política de garantía redactada en párrafos concretos y la distinción entre garantía comercial y derecho legal asumida.</div>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>11</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 08</span></div>
+  <p class="kicker">Parte IV — Dinero y visibilidad</p>
+  <div class="chapnum">08</div>
+  <h2>Precios, márgenes y punto de equilibrio</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">Poner precio por miedo a cobrar demasiado conduce a negocios insostenibles. Un archivo no tiene coste de fabricación unitario, pero sí tiene comisiones, publicidad, software y soporte. Todo eso sale del precio.</p>
+  <h3>Tres enfoques, un mismo destino</h3>
+  <p><strong>Valor percibido.</strong> Se calcula por el ahorro o la mejora que obtiene el cliente. Si una plantilla ahorra cinco horas de trabajo administrativo, el precio se ancla a esas horas, no al tiempo que te costó crearla.</p>
+  <p><strong>Referencia de mercado.</strong> Observa qué se cobra alrededor. Sirve para situarse, no para copiar: si todos cobran poco y todos tienen reseñas malas, el precio bajo no es una estrategia.</p>
+  <p><strong>Escalones.</strong> Dos opciones, una básica y otra con acompañamiento, permiten que cada comprador elija. Elevan el ingreso medio sin subir el precio de entrada.</p>
+  <div class="warn">
+    <span class="lbl">Aviso — Los rangos de precio no son estadísticas</span>
+    Cualquier horquilla que veas en un libro, incluido este, es una <strong>observación de mercado en un momento y en una muestra informal</strong>. Cambia por nicho, país, canal y posicionamiento. Úsala como punto de partida y valida con la Herramienta 1 mirando ofertas reales de tu categoría hoy.
+  </div>
+  <h3>Margen bruto, margen de contribución y beneficio neto</h3>
+  <p>Se confunden constantemente. No son lo mismo y el orden importa:</p>
+  <table>
+    <tbody><tr><th style="width:150px">Concepto</th><th>Qué resta</th><th>Para qué sirve</th></tr>
+    <tr><td><strong>Margen bruto</strong></td><td>Precio − coste directo de entrega</td><td>Saber cuánto queda antes de vender</td></tr>
+    <tr><td><strong>Margen de contribución</strong></td><td>Margen bruto − comisiones − adquisición</td><td>Saber cuánto aporta cada venta a los costes fijos</td></tr>
+    <tr><td><strong>Beneficio neto</strong></td><td>Contribución total − costes fijos − impuestos</td><td>Saber si el negocio gana dinero</td></tr>
+  </tbody></table>
+  <p>Un margen bruto del 92 % es habitual en productos digitales y no dice casi nada: no ha restado IVA, comisiones reales, publicidad ni suscripciones. El número que decide si puedes vivir de esto es el último.</p>
+  <div class="box">
+    <span class="lbl">Concepto clave — El IVA no es tuyo</span>
+    En ventas a consumidores dentro de la UE, el precio que muestra el cliente incluye IVA (o el impuesto equivalente). Ese importe se recauda y se ingresa: no forma parte de tu facturación neta. Presupuestar sobre el precio con impuestos incluidos infla todos los cálculos un 21 % en el tipo general español.
+  </div>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>12</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 08</span></div>
+  <p class="kicker">Parte IV — Dinero y visibilidad</p>
+  <h2 style="font-size:22px">El desglose completo, con números</h2>
+  <div class="rule-dark"></div>
+  <p class="small">Ejemplo aritmético con supuestos explícitos: producto de 29,00 € con IVA incluido, IVA general del 21 % (España), comisión de pasarela del 5 % + 0,50 €, entrega 0,20 €, publicidad 6,00 € por venta y 45,00 € de costes fijos mensuales repartidos entre 40 ventas.</p>
+  <table>
+    <tbody><tr><th>Concepto</th><th class="num" style="width:80px">Importe</th><th class="num" style="width:66px">% s/ PVP</th></tr>
+    <tr><td>Precio de venta al público (IVA incluido)</td><td class="num">29,00 €</td><td class="num">100,0 %</td></tr>
+    <tr><td>IVA repercutido (29,00 ÷ 1,21 = 23,97 base)</td><td class="num">−5,03 €</td><td class="num">17,4 %</td></tr>
+    <tr class="sub"><td>Ingreso neto (base imponible)</td><td class="num">23,97 €</td><td class="num">82,6 %</td></tr>
+    <tr><td>Comisión de pasarela (5 % de 29,00 + 0,50)</td><td class="num">−1,95 €</td><td class="num">6,7 %</td></tr>
+    <tr><td>Entrega y alojamiento</td><td class="num">−0,20 €</td><td class="num">0,7 %</td></tr>
+    <tr class="sub"><td>Margen bruto</td><td class="num">21,82 €</td><td class="num">75,2 %</td></tr>
+    <tr><td>Adquisición de cliente (prorrateada)</td><td class="num">−6,00 €</td><td class="num">20,7 %</td></tr>
+    <tr class="sub"><td>Margen de contribución</td><td class="num">15,82 €</td><td class="num">54,6 %</td></tr>
+    <tr><td>Costes fijos (45,00 € ÷ 40 ventas)</td><td class="num">−1,13 €</td><td class="num">3,9 %</td></tr>
+    <tr class="total"><td>Beneficio antes de impuestos por venta</td><td class="num">14,69 €</td><td class="num">50,7 %</td></tr>
+  </tbody></table>
+  Los porcentajes se calculan sobre el precio con IVA para que la suma sea coherente con la columna de importes.
+  <p><strong>Sin publicidad</strong>, el margen de contribución sube a 21,82 € y el beneficio antes de impuestos a 20,69 € por venta. Esa diferencia mide exactamente lo que cuesta crecer pagando.</p>
+  <h3>Punto de equilibrio y techo de adquisición</h3>
+  <p>Con 45,00 € de costes fijos y 15,82 € de contribución, necesitas <strong>2,85 ventas mensuales</strong> solo para cubrirlos: en la práctica, tres. Con contribución de 21,82 € (sin anuncios) bajaría a 2,06.</p>
+  <p>El techo de adquisición es la contribución sin publicidad: <strong>21,82 €</strong>. Por encima de esa cifra, cada venta pagada destruye margen. Con 29 € de precio y 6 € de coste publicitario, tu coste de adquisición real debe mantenerse muy por debajo del techo para que el canal sea rentable.</p>
+  <div class="warn">
+    <span class="lbl">Aviso — Comisiones: comprueba la tarifa vigente</span>
+    Las tarifas de pasarelas y plataformas cambian y varían por país, tipo de tarjeta y volumen. Un 5 % + 0,50 € es una aproximación; algunas plataformas cobran un porcentaje plano sobre la venta y otras añaden conversión de divisa. Consulta la tarifa publicada hoy antes de fijar precios y recuerda que la comisión suele aplicarse sobre el importe total cobrado, IVA incluido.
+  </div>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>13</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 08</span></div>
+  <p class="kicker">Parte IV — Dinero y visibilidad</p>
+  <h2 style="font-size:22px">Impuestos, cuentas y decisiones de precio</h2>
+  <div class="rule-dark"></div>
+  <h3>Qué falta después del beneficio</h3>
+  <ul class="clean">
+    <li><strong>Impuesto sobre la renta o sociedades:</strong> grava el beneficio, con tipos y tramos distintos por país y forma jurídica.</li>
+    <li><strong>Cotizaciones sociales:</strong> en España, el alta como autónomo devenga cuota según tramos de rendimiento neto.</li>
+    <li><strong>IVA:</strong> liquidación periódica; en España, modelo 303 trimestral y modelos anuales de resumen.</li>
+    <li><strong>Retenciones de IRPF:</strong> pagos fraccionados mediante modelo 130 en estimación directa.</li>
+  </ul>
+  <p class="small">Los importes y la periodicidad dependen del régimen y del territorio. Confírmalo con un asesor antes de proyectar ingresos netos.</p>
+  <h3>Cómo elegir el precio con criterio</h3>
+  <table>
+    <tbody><tr><th style="width:130px">Situación</th><th>Qué hacer</th></tr>
+    <tr><td>Primer producto, sin reseñas</td><td>Precio de entrada contenido y escalón superior con acompañamiento</td></tr>
+    <tr><td>Buen margen y demanda sostenida</td><td>Subir 3–5 € y medir conversión durante dos semanas</td></tr>
+    <tr><td>Conversión alta y muchas consultas previas</td><td>Señal de precio bajo; sube y observa</td></tr>
+    <tr><td>Conversión muy baja con tráfico cualificado</td><td>Antes de bajar el precio, revisa el encaje y la página</td></tr>
+  </tbody></table>
+  <div class="case">
+    <span class="lbl">Caso ilustrativo — El escalón que no era</span>
+    <em>Ejemplo ficticio con fines educativos.</em> Nuria vendía una guía a 19 € con 60 ventas al mes. Añadió una versión a 49 € con dos sesiones de revisión. De sus 60 compradores, 8 eligieron la versión alta. Ingreso: 52 × 19 + 8 × 49 = 988 + 392 = <strong>1.380 €</strong> frente a 1.140 €. La versión alta consumió 16 horas de su mes. Su conclusión no fue «el escalón funciona»: fue «funciona si puedo sostener 16 horas de soporte». Con 40 horas disponibles, el techo estaba en 20 sesiones.
+  </div>
+  <div class="ex">
+    <span class="lbl">Ejercicio 03 — Tu desglose en una hoja</span>
+    Repite la tabla de la página anterior con tus cifras: precio, IVA, comisión, entrega, publicidad, fijos y ventas previstas. Calcula contribución y punto de equilibrio. Si el punto de equilibrio supera tus ventas realistas, el problema es el precio o el coste, no el esfuerzo.
+  </div>
+  <div class="box"><span class="lbl">Lo que te llevas</span>Un precio elegido con criterio, un desglose completo, un punto de equilibrio calculado y un techo de adquisición anotado. Si no puedes rellenar la tabla, no tienes precio: tienes una intuición.</div>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>14</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 09</span></div>
+  <p class="kicker">Parte IV — Dinero y visibilidad</p>
+  <div class="chapnum">09</div>
+  <h2>Marketing sin presupuesto</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">El mejor producto fracasa si nadie lo descubre. Sin presupuesto publicitario, el método es enseñar en público: demostrar dominio con fragmentos útiles antes de pedir una compra.</p>
+  <h3>Sistema de tres pilares</h3>
+  <table>
+    <tbody><tr><th style="width:60px">Peso</th><th>Pilar</th><th>Contenido</th></tr>
+    <tr><td class="num">70 %</td><td><strong>Educativo</strong></td><td>Guías breves, errores resueltos, listas de control, microproblemas explicados</td></tr>
+    <tr><td class="num">20 %</td><td><strong>Proceso y autoridad</strong></td><td>Cómo construyes, con qué criterio evalúas, casos con detalle</td></tr>
+    <tr><td class="num">10 %</td><td><strong>Conversión</strong></td><td>Presentación del producto, demostración interna, enlace a la tienda</td></tr>
+  </tbody></table>
+  <p>La proporción evita dos extremos: cuentas que solo venden y cuentas que nunca venden.</p>
+  <h3>El correo desde el primer día</h3>
+  <p>Las redes son canales de descubrimiento con reglas ajenas. Tu lista es el único canal que controlas. Ofrece un recurso breve y realmente práctico a cambio de suscripción voluntaria, con consentimiento explícito y posibilidad de baja.</p>
+  <div class="warn">
+    <span class="lbl">Aviso — Consentimiento y datos</span>
+    La captación de correo en la UE se rige por el RGPD y, para comunicaciones comerciales electrónicas, por normas nacionales de servicios de la sociedad de la información. Necesitas base jurídica, información sobre finalidad y conservación, y un mecanismo de baja. Un formulario que envía correos sin consentimiento previo no es conforme aunque funcione.
+  </div>
+  <div class="case">
+    <span class="lbl">Caso ilustrativo — Crecimiento por casos prácticos</span>
+    <em>Ejemplo ficticio con fines educativos.</em> Sofía publicó durante cuatro semanas, tres veces por semana en LinkedIn, análisis de preguntas difíciles de entrevista con respuestas estructuradas. Cada publicación enlazaba a una hoja gratuita. Reunió 340 suscriptores en un mes; al lanzar la guía a 18 €, 22 compraron en la primera semana (396 € sin anuncios). La conversión —6,5 % de la lista— es <strong>buena, no típica</strong>: suele situarse entre el 1 % y el 3 % en listas tibias. Sofía había hablado con su audiencia del tema exacto durante un mes.
+  </div>
+  <h3>Qué medir</h3>
+  <table>
+    <tbody><tr><th style="width:150px">Métrica</th><th>Qué te dice</th></tr>
+    <tr><td>Visitas a la página</td><td>Alcance del mensaje</td></tr>
+    <tr><td>Visitas → suscripción</td><td>Atractivo del imán</td></tr>
+    <tr><td>Suscripción → compra</td><td>Encaje entre promesa y producto</td></tr>
+    <tr><td>Visitas → compra</td><td>Rendimiento global del embudo</td></tr>
+    <tr><td>Devoluciones</td><td>Desajuste entre expectativa y entrega</td></tr>
+  </tbody></table>
+  <p class="small">Mide por canal y por semana. Sin series temporales no hay diagnóstico, solo opinión.</p>
+  <div class="box"><span class="lbl">Lo que te llevas</span>Un calendario de dos semanas con los tres pilares repartidos, un imán gratuito terminado y una hoja de métricas con las cinco filas de arriba.</div>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>15</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 10</span></div>
+  <p class="kicker">Parte IV — Dinero y visibilidad</p>
+  <div class="chapnum">10</div>
+  <h2>Una marca digital sencilla</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">Una marca personal no necesita logotipo ni agencia. Es la suma de claridad del mensaje, calidad constante y coherencia estética. Se construye en los detalles que el cliente ve tres veces.</p>
+  <h3>Principios de diseño editorial</h3>
+  <ul class="clean">
+    <li><strong>Tipografía antes que decoración.</strong> Dos familias como máximo: una para titulares y estructura, otra para lectura prolongada. Tamaños con jerarquía real.</li>
+    <li><strong>Paleta restringida.</strong> Blanco, negro y dos grises. Transmite rigor, imprime bien y elimina distracciones.</li>
+    <li><strong>Espacio en blanco.</strong> Márgenes amplios, reglas finas para separar, tablas para la información densa.</li>
+    <li><strong>Tono estable.</strong> El mismo registro directo y sin exageración en redes, producto y correos de soporte.</li>
+  </ul>
+  <div class="box">
+    <span class="lbl">Concepto clave — Coherencia como señal de fiabilidad</span>
+    El comprador no puede verificar tu experiencia antes de pagar. Lo que sí puede evaluar es si el conjunto parece cuidado: portada, maquetación, ortografía, tiempo de respuesta. La incoherencia se lee como descuido, y el descuido se traduce en desconfianza sobre el contenido.
+  </div>
+  <div class="ex">
+    <span class="lbl">Ejercicio 04 — Ficha de identidad mínima</span>
+    Una página, cuatro decisiones, antes de publicar nada:
+    <ol>
+      <li><strong>Nombre:</strong> corto, fácil de escribir y pronunciar, disponible como dominio.</li>
+      <li><strong>Posicionamiento en una frase:</strong> «Ayudo a [público] a [resultado] mediante [tipo de producto]».</li>
+      <li><strong>Estándar visual:</strong> dos fuentes, paleta neutra, plantilla única para todos los PDF.</li>
+      <li><strong>Estándar de atención:</strong> plazo máximo de respuesta (por ejemplo, 24 horas laborables) y qué haces fuera de plazo.</li>
+    </ol>
+  </div>
+  <h3>Errores de marca frecuentes</h3>
+  <table>
+    <tbody><tr><th style="width:170px">Error</th><th>Consecuencia</th></tr>
+    <tr><td>Cambiar de estética cada semana</td><td>El lector no reconoce tu material</td></tr>
+    <tr><td>Usar plantillas gratuitas sin adaptar</td><td>Se percibe como producto de reventa</td></tr>
+    <tr><td>Prometer resultados absolutos</td><td>Cada incumplimiento resta credibilidad</td></tr>
+    <tr><td>Desaparecer tras la venta</td><td>Sin reseñas ni recompra</td></tr>
+  </tbody></table>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>16</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 11</span></div>
+  <p class="kicker">Parte V — Ejecución</p>
+  <div class="chapnum">11</div>
+  <h2>Once errores y su antídoto</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">Los obstáculos se anticipan. Cada error de la tabla tiene una consecuencia previsible y una medida preventiva que cuesta menos que repararlo.</p>
+  <table>
+    <tbody><tr><th style="width:145px">Error</th><th>Consecuencia habitual</th><th>Medida preventiva</th></tr>
+    <tr><td>Perfeccionismo paralizante</td><td>Meses puliendo detalles menores</td><td>Versión 1.0 completa y útil, con fecha límite</td></tr>
+    <tr><td>Alcance enciclopédico</td><td>Producto abrumador e inacabado</td><td>Un problema, una ruta, una versión</td></tr>
+    <tr><td>Gastar en herramientas antes de vender</td><td>Suscripciones que consumen el margen</td><td>Operar gratis hasta la primera venta</td></tr>
+    <tr><td>Ignorar lo fiscal y legal</td><td>Problemas de facturación y propiedad intelectual</td><td>Consultar normativa local y usar plataformas que gestionen impuestos</td></tr>
+    <tr><td>Abandonar tras el primer mes flojo</td><td>Leer un inicio lento como fracaso</td><td>Analizar conversión, pedir feedback, iterar</td></tr>
+    <tr><td>Confundir lista con demanda</td><td>Lanzamiento a una audiencia que no compra</td><td>Validar con pago antes de producir</td></tr>
+    <tr><td>Publicar sin revisión</td><td>Erratas, enlaces roscos, cálculos mal hechos</td><td>Lectura externa y prueba de compra real</td></tr>
+    <tr><td>Copiar a un competidor entero</td><td>Precio y propuesta indistinguibles</td><td>Elegir un ángulo y sostenerlo</td></tr>
+    <tr><td>No documentar nada</td><td>Repetir errores sin aprendizaje</td><td>Registro de decisiones y resultados</td></tr>
+    <tr><td>Vender sin soporte definido</td><td>Consultas que consumen horas no previstas</td><td>Alcance explícito y plazo de respuesta</td></tr>
+    <tr><td>Prometer resultados económicos</td><td>Devoluciones y reseñas negativas</td><td>Lenguaje condicional y ejemplos etiquetados</td></tr>
+  </tbody></table>
+  <h3>El error que no aparece en ninguna lista</h3>
+  <p>Construir para un público que no existe porque nadie lo ha comprobado. Es el más caro y el más frecuente. La Herramienta 3 lo detecta con puntuación: si demanda y disposición de pago suspenden, ningún esfuerzo de diseño lo salva.</p>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>17</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 12</span></div>
+  <p class="kicker">Parte V — Ejecución</p>
+  <div class="chapnum">12</div>
+  <h2>Plan de acción de 30 días</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">Calendario para 60–90 minutos diarios. No construye un imperio: lleva un producto desde la idea hasta su publicación y primeras ventas verificadas.</p>
+  <table>
+    <tbody><tr><th style="width:52px">Fase</th><th style="width:64px">Días</th><th>Tareas</th></tr>
+    <tr><td><strong>1</strong><br><span class="score">Selección</span></td><td>1–7</td><td>Días 1–2: matriz de ideas y elección de dos finalistas.<br>Días 3–4: cinco competidores y sus quejas frecuentes.<br>Días 5–7: cinco conversaciones y recurso gratuito para medir interés.</td></tr>
+    <tr><td><strong>2</strong><br><span class="score">Producción</span></td><td>8–14</td><td>Días 8–9: índice detallado y acopio de ejemplos reales.<br>Días 10–13: construcción del núcleo.<br>Día 14: revisión técnica, enlaces, cálculos y coherencia.</td></tr>
+    <tr><td><strong>3</strong><br><span class="score">Infraestructura</span></td><td>15–21</td><td>Días 15–16: maquetación y exportación final.<br>Días 17–18: plataforma, pasarela y datos fiscales.<br>Días 19–21: página de producto, imágenes y correo de entrega.</td></tr>
+    <tr><td><strong>4</strong><br><span class="score">Lanzamiento</span></td><td>22–30</td><td>Días 22–23: compra de prueba del flujo completo.<br>Días 24–27: contenido diario y anuncio a la lista.<br>Días 28–30: recogida de opiniones y lista de mejoras 1.1.</td></tr>
+  </tbody></table>
+  <h3>Reglas de ejecución</h3>
+  <ul class="clean">
+    <li>Un día perdido se recupera al siguiente; dos seguidos obligan a recortar alcance, no a alargar el plazo.</li>
+    <li>El día 7 es el punto de decisión: sin señal de interés, cambias de idea antes de producir.</li>
+    <li>El día 14 no se negocia: se publica lo revisado, no lo perfecto.</li>
+    <li>El día 30 se cierra con tres cifras escritas: visitas, conversión y ventas.</li>
+  </ul>
+  <div class="warn">
+    <span class="lbl">Aviso — Ritmo realista</span>
+    Si trabajas por cuenta ajena o estudias, 60–90 minutos diarios son un techo, no una media. El plan se estira a 45 o 60 días sin perder validez; lo que no se estira es la fase de validación.
+  </div>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>18</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Capítulo 13</span></div>
+  <p class="kicker">Parte V — Ejecución</p>
+  <div class="chapnum">13</div>
+  <h2>Reflexiones finales</h2>
+  <div class="rule-dark"></div>
+  <p class="lead">Construir tu primer producto cambia tu relación con el trabajo y con lo que sabes. Pasas de consumir información a producir algo que otros valoran lo suficiente para pagarlo.</p>
+  <p>Ese cambio no ocurre de golpe ni se sostiene en la motivación. Se sostiene en un sistema: un problema verificado, un alcance pequeño, un precio calculado, una página honesta y una rutina de revisión. Lo demás es ruido.</p>
+  <h3>Tres criterios para decidir si sigues</h3>
+  <p>Al terminar los 30 días tendrás datos, aunque sean escasos. Decide con ellos:</p>
+  <ol>
+    <li><strong>Hay compradores y hay preguntas.</strong> Sigue: las preguntas son el mapa de la versión 1.1.</li>
+    <li><strong>Hay interés sin compra.</strong> Revisa precio, encaje y prueba; no produzcas más hasta corregir.</li>
+    <li><strong>No hay interés ni con tráfico cualificado.</strong> Cambia de problema, conserva el método. La investigación no se pierde.</li>
+  </ol>
+  <blockquote>Tu primer lanzamiento no tiene que ser perfecto. Tiene que ser honesto, claro y útil.<cite>Monolith. — Principio editorial</cite></blockquote>
+  <p>Cada versión posterior mejora gracias a preguntas reales de clientes reales. Esa es la única ventaja competitiva que se acumula: quien escucha durante más tiempo acaba sabiendo más que quien solo publica.</p>
+  <p>Empieza acotado, valida antes de producir en exceso, diseña con rigor y comunica sin adornos. Ese es el fundamento de los negocios digitales que duran más de un trimestre.</p>
+  <div class="rule"></div>
+  <p class="kicker">Acerca de</p>
+  <h3 style="border:0;padding:0;margin-bottom:8px">MONOLITH. Digital Knowledge Studio</h3>
+  <p class="small">Estudio editorial independiente dedicado a guías prácticas, sistemas de trabajo y recursos educativos sobre emprendimiento digital. Claridad frente a ruido, rigor metodológico frente a promesas vacías, diseño editorial atemporal como vehículo de aprendizaje.</p>
+  <p class="small" style="font-family:var(--disp);letter-spacing:.26em;text-transform:uppercase;font-size:9px;color:var(--g4);margin-top:14px">Build your next chapter.</p>
+  <div class="runfoot"><span>Monolith. — Guía digital para principiantes</span><span>19</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Herramienta 01</span></div>
+  <p class="kicker">Aparato práctico</p>
+  <div class="chapnum">A</div>
+  <h2>Ficha de investigación de competidores</h2>
+  <div class="rule-dark"></div>
+  <p class="small">Una ficha por competidor, entre tres y cinco. Rellena con datos observados, no supuestos. La columna final es la que decide.</p>
+  <table>
+    <tbody><tr><th style="width:150px">Campo</th><th>Competidor 1 · 2 · 3</th></tr>
+    <tr><td><strong>Nombre y enlace</strong></td><td style="height:26px"></td></tr>
+    <tr><td><strong>Plataforma</strong></td><td></td></tr>
+    <tr><td><strong>Promesa del titular</strong> (literal)</td><td style="height:32px"></td></tr>
+    <tr><td><strong>Público al que habla</strong></td><td></td></tr>
+    <tr><td><strong>Formato y extensión</strong></td><td></td></tr>
+    <tr><td><strong>Precio y escalones</strong></td><td></td></tr>
+    <tr><td><strong>N.º de reseñas y nota</strong></td><td></td></tr>
+    <tr><td><strong>Qué elogian</strong> (cita 2)</td><td style="height:34px"></td></tr>
+    <tr><td><strong>Qué critican</strong> (cita 2)</td><td style="height:34px"></td></tr>
+    <tr><td><strong>Ventaja que no puedo igualar</strong></td><td></td></tr>
+    <tr><td><strong>Hueco explotable</strong></td><td style="height:34px"></td></tr>
+  </tbody></table>
+  <h3>Síntesis obligatoria al cerrar la ficha</h3>
+  <div class="box">
+    <span class="lbl">Tres frases</span>
+    1. El hueco más repetido en las críticas es: ______________________________<br><br>
+    2. Mi producto lo cubre así: ______________________________<br><br>
+    3. La diferencia se explica en la primera línea de mi página: ______________________________
+  </div>
+  <div class="warn">
+    <span class="lbl">Criterio de lectura</span>
+    Si tres fichas seguidas no muestran ningún hueco, no hay categoría: hay saturación. Cambia el ángulo de público antes de cambiar el diseño.
+  </div>
+  <div class="runfoot"><span>Monolith. — Herramientas</span><span>20</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Herramienta 02</span></div>
+  <p class="kicker">Aparato práctico</p>
+  <div class="chapnum">B</div>
+  <h2>Calculadora de rentabilidad</h2>
+  <div class="rule-dark"></div>
+  <p class="small">Modifica los campos: el cálculo se actualiza. Todos los importes son ejemplos editables, no previsiones.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 26px">
+    <div>
+      <div class="field"><label>Precio con IVA (€)</label><input id="p" type="number" value="29" step="0.5"></div>
+      <div class="field"><label>IVA (%)</label><input id="iva" type="number" value="21" step="1"></div>
+      <div class="field"><label>Comisión pasarela (%)</label><input id="cp" type="number" value="5" step="0.1"></div>
+      <div class="field"><label>Comisión fija (€)</label><input id="cf" type="number" value="0.50" step="0.05"></div>
+    </div>
+    <div>
+      <div class="field"><label>Entrega / alojamiento (€)</label><input id="en" type="number" value="0.20" step="0.05"></div>
+      <div class="field"><label>Publicidad por venta (€)</label><input id="cac" type="number" value="6" step="0.5"></div>
+      <div class="field"><label>Costes fijos mensuales (€)</label><input id="fx" type="number" value="45" step="1"></div>
+      <div class="field"><label>Ventas previstas / mes</label><input id="v" type="number" value="40" step="1"></div>
+    </div>
+  </div>
+  <div class="out">
+    <div class="row"><span>Ingreso neto (sin IVA)</span><span id="o1">23,97 €</span></div>
+    <div class="row"><span>IVA repercutido</span><span id="o2">5,03 €</span></div>
+    <div class="row"><span>Margen bruto</span><span id="o3">21,82 €</span></div>
+    <div class="row"><span>Margen de contribución</span><span id="o4">15,82 €</span></div>
+    <div class="row"><span>Contribución sobre PVP</span><span id="o5">54,5 %</span></div>
+    <div class="row"><span>Punto de equilibrio (ventas/mes)</span><span id="o6">2,85 ventas</span></div>
+    <div class="row"><span>Resultado mensual antes de impuestos</span><span id="o7">587,68 €</span></div>
+    <div class="row big"><span>Techo de adquisición</span><span id="o8">21,82 €</span></div>
+  </div>
+  <p class="small" style="margin-top:10px"><strong>Techo de adquisición</strong> = margen bruto menos entrega. Es el máximo que puedes pagar por conseguir una venta sin destruir margen.</p>
+  <table style="margin-top:16px">
+    <tbody><tr><th>Ejemplo de referencia (40 ventas/mes)</th><th class="num">Resultado</th></tr>
+    <tr><td>Sin publicidad, beneficio antes de impuestos por venta</td><td class="num">20,69 €</td></tr>
+    <tr><td>Con 6,00 € de publicidad por venta</td><td class="num">14,69 €</td></tr>
+    <tr><td>Diferencia que cuesta crecer pagando</td><td class="num">6,00 € / venta</td></tr>
+    <tr><td>Punto de equilibrio con publicidad (45 € fijos)</td><td class="num">2,85 ventas</td></tr>
+  </tbody></table>
+  <div class="warn">
+    <span class="lbl">Fuera del cálculo</span>
+    Impuesto sobre la renta, cotizaciones sociales, conversión de divisa, devoluciones y coste de tu hora. Añádelos en una segunda hoja antes de decidir si el negocio sostiene tu vida, no solo el producto.
+  </div>
+  <div class="runfoot"><span>Monolith. — Herramientas</span><span>21</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Herramienta 03</span></div>
+  <p class="kicker">Aparato práctico</p>
+  <div class="chapnum">C</div>
+  <h2>Evaluación de ideas</h2>
+  <div class="rule-dark"></div>
+  <p class="small">Puntúa de 1 a 5. Suma. Una idea con demanda baja y disposición de pago baja no se rescata con buen diseño.</p>
+  <table>
+    <tbody><tr><th style="width:150px">Criterio</th><th>Qué puntúa un 5</th><th class="num" style="width:46px">Peso</th><th class="num" style="width:46px">Idea A</th><th class="num" style="width:46px">Idea B</th></tr>
+    <tr><td><strong>Demanda</strong></td><td>Búsquedas y competidores con reseñas activas</td><td class="num">×3</td><td class="num"></td><td class="num"></td></tr>
+    <tr><td><strong>Disposición de pago</strong></td><td>El público ya paga por soluciones parecidas</td><td class="num">×3</td><td class="num"></td><td class="num"></td></tr>
+    <tr><td><strong>Encaje con tu conocimiento</strong></td><td>Puedes entregar sin investigar de cero</td><td class="num">×2</td><td class="num"></td><td class="num"></td></tr>
+    <tr><td><strong>Dificultad de producción</strong></td><td>Primera versión útil en menos de 20 h</td><td class="num">×2</td><td class="num"></td><td class="num"></td></tr>
+    <tr><td><strong>Inversión necesaria</strong></td><td>Menos de 30 € antes de la primera venta</td><td class="num">×2</td><td class="num"></td><td class="num"></td></tr>
+    <tr><td><strong>Competencia</strong></td><td>Existe, pero con huecos documentados</td><td class="num">×1</td><td class="num"></td><td class="num"></td></tr>
+    <tr><td><strong>Facilidad de demostración</strong></td><td>Se puede mostrar el valor en una captura</td><td class="num">×1</td><td class="num"></td><td class="num"></td></tr>
+    <tr class="total"><td colspan="3">Puntuación ponderada (máx. 70)</td><td class="num"></td><td class="num"></td></tr>
+  </tbody></table>
+  <h3>Lectura del resultado</h3>
+  <table>
+    <tbody><tr><td style="width:70px"><strong>55–70</strong></td><td>Procede a validación con pago.</td></tr>
+    <tr><td><strong>40–54</strong></td><td>Procede, pero ajusta alcance o público.</td></tr>
+    <tr><td><strong>25–39</strong></td><td>Reformula el problema antes de producir.</td></tr>
+    <tr><td><strong>&lt; 25</strong></td><td>Descarta. Conserva el aprendizaje.</td></tr>
+  </tbody></table>
+  <div class="box"><span class="lbl">Regla de desempate</span>Si dos ideas empatan, elige la que puedas entregar antes. La velocidad de aprendizaje vale más que el tamaño del mercado en el primer producto.</div>
+  <div class="runfoot"><span>Monolith. — Herramientas</span><span>22</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Herramienta 04</span></div>
+  <p class="kicker">Aparato práctico</p>
+  <div class="chapnum">D</div>
+  <h2>Checklist de lanzamiento</h2>
+  <div class="rule-dark"></div>
+  <p class="small">Ninguna casilla se marca por «casi». Si una tarea no se cumple, se anota la razón y se decide si bloquea o no.</p>
+  <h3>Antes · producto</h3>
+  <div class="chk"><span class="b"></span><span>Producto completo, exportado y abierto en dos dispositivos distintos.</span></div>
+  <div class="chk"><span class="b"></span><span>Ortografía, maquetación y numeración revisadas por una persona ajena.</span></div>
+  <div class="chk"><span class="b"></span><span>Todos los cálculos comprobados y con supuestos visibles.</span></div>
+  <div class="chk"><span class="b"></span><span>Enlaces, fuentes y referencias verificados uno a uno.</span></div>
+  <div class="chk"><span class="b"></span><span>Alcance explícito: qué incluye y qué no.</span></div>
+  <div class="chk"><span class="b"></span><span>Uso de IA declarado si corresponde.</span></div>
+  <h3>Antes · negocio</h3>
+  <div class="chk"><span class="b"></span><span>Alta de actividad y encuadramiento resueltos o confirmados con asesor.</span></div>
+  <div class="chk"><span class="b"></span><span>Datos fiscales y de facturación configurados en la plataforma.</span></div>
+  <div class="chk"><span class="b"></span><span>Política de garantía redactada y publicada antes de la compra.</span></div>
+  <div class="chk"><span class="b"></span><span>Aviso legal, privacidad y cookies en la web.</span></div>
+  <div class="chk"><span class="b"></span><span>Precio, escalones y punto de equilibrio calculados.</span></div>
+  <div class="chk"><span class="b"></span><span>Correo de entrega redactado, con instrucciones de uso y de soporte.</span></div>
+  <h3>Durante</h3>
+  <div class="chk"><span class="b"></span><span>Compra real de prueba con tarjeta propia, del inicio al archivo.</span></div>
+  <div class="chk"><span class="b"></span><span>Archivo recibido, abierto y verificado en móvil y escritorio.</span></div>
+  <div class="chk"><span class="b"></span><span>Formulario de contacto y correo de soporte probados.</span></div>
+  <div class="chk"><span class="b"></span><span>Publicación anunciada a la lista antes que en redes.</span></div>
+  <div class="chk"><span class="b"></span><span>Métricas activas: visitas, suscripciones, compras, devoluciones.</span></div>
+  <h3>Después · primeras 72 horas</h3>
+  <div class="chk"><span class="b"></span><span>Todas las consultas respondidas en el plazo fijado.</span></div>
+  <div class="chk"><span class="b"></span><span>Compradores invitados a dejar reseña sin incentivo condicionado.</span></div>
+  <div class="chk"><span class="b"></span><span>Incidencias registradas con fecha y causa.</span></div>
+  <div class="chk"><span class="b"></span><span>Lista de mejoras 1.1 priorizada por frecuencia de queja.</span></div>
+  <div class="chk"><span class="b"></span><span>Primeras cifras anotadas: visitas, conversión, ventas.</span></div>
+  <div class="warn">
+    <span class="lbl">Puerta de salida</span>
+    No se publica con la compra de prueba pendiente. Es el fallo más frecuente y el más caro: un enlace roto en el correo de entrega genera devoluciones en la primera hora.
+  </div>
+  <div class="runfoot"><span>Monolith. — Herramientas</span><span>23</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Glosario</span></div>
+  <p class="kicker">Referencia rápida</p>
+  <h2 style="font-size:22px">Glosario</h2>
+  <div class="rule-dark"></div>
+  <table>
+    <tbody><tr><td style="width:150px"><strong>Beneficio neto</strong></td><td>Resultado tras restar todos los costes e impuestos. Único indicador de viabilidad.</td></tr>
+    <tr><td><strong>Coste de adquisición (CAC)</strong></td><td>Gasto medio en conseguir un cliente. Se compara con el techo de adquisición.</td></tr>
+    <tr><td><strong>Coste marginal</strong></td><td>Gasto de producir y entregar una unidad adicional.</td></tr>
+    <tr><td><strong>Derecho de desistimiento</strong></td><td>Facultad legal de resolver una compra a distancia en plazo, con excepciones.</td></tr>
+    <tr><td><strong>Escalera de valor</strong></td><td>Secuencia de ofertas de menor a mayor compromiso.</td></tr>
+    <tr><td><strong>Imán (lead magnet)</strong></td><td>Recurso gratuito a cambio de suscripción.</td></tr>
+    <tr><td><strong>Margen bruto</strong></td><td>Precio neto menos coste directo de entrega.</td></tr>
+    <tr><td><strong>Margen de contribución</strong></td><td>Margen bruto menos comisiones y adquisición; lo que aporta cada venta a los fijos.</td></tr>
+    <tr><td><strong>Punto de equilibrio</strong></td><td>Ventas necesarias para cubrir costes fijos.</td></tr>
+    <tr><td><strong>Techo de adquisición</strong></td><td>Máximo pagable por cliente sin destruir margen.</td></tr>
+    <tr><td><strong>Validación</strong></td><td>Evidencia de interés con coste para el interesado.</td></tr>
+  </tbody></table>
+  <div class="runfoot"><span>Monolith. — Referencia</span><span>24</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Referencias</span></div>
+  <p class="kicker">Fuentes verificables</p>
+  <h2 style="font-size:22px">Referencias y marco normativo</h2>
+  <div class="rule-dark"></div>
+  <p class="small" style="margin-bottom:14px">Solo se citan normas y organismos oficiales. Las cifras de mercado que aparecen en el libro se han marcado como observación o heurística porque no existe una estadística pública única y fiable por categoría.</p>
+  <h3>Unión Europea</h3>
+  <ol class="refs">
+    <li>Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales (RGPD). <em>DO L 119, 4.5.2016.</em></li>
+    <li>Directiva 2011/83/UE del Parlamento Europeo y del Consejo, de 25 de octubre de 2011, sobre los derechos de los consumidores, en particular su artículo 16 sobre excepciones al derecho de desistimiento. <em>DO L 304, 22.11.2011.</em></li>
+    <li>Directiva (UE) 2019/770, de 20 de mayo de 2019, relativa a determinados aspectos de los contratos de suministro de contenidos y servicios digitales. <em>DO L 136, 22.5.2019.</em></li>
+    <li>Reglamento (UE) 2024/1689, de 13 de junio de 2024, por el que se establecen normas armonizadas en materia de inteligencia artificial. <em>DO L, 12.7.2024.</em></li>
+    <li>Reglamento (UE) 2019/1150, de 20 de junio de 2019, sobre el trato equitativo de usuarios profesionales de servicios de intermediación en línea. <em>DO L 186, 11.7.2019.</em></li>
+  </ol>
+  <h3>España</h3>
+  <ol class="refs" start="6">
+    <li>Real Decreto Legislativo 1/2007, de 16 de noviembre, por el que se aprueba el texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios (arts. 102 y ss. y 103.m).</li>
+    <li>Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico.</li>
+    <li>Texto refundido de la Ley de Propiedad Intelectual, aprobado por Real Decreto Legislativo 1/1996, de 12 de abril.</li>
+    <li>Agencia Estatal de Administración Tributaria — sede electrónica, modelos 303 y 130 y guías de inicio de actividad. <span class="mono">sede.agenciatributaria.gob.es</span></li>
+    <li>Agencia Española de Protección de Datos — guías de cumplimiento del RGPD para pymes y autónomos. <span class="mono">aepd.es</span></li>
+    <li>Punto de Atención al Emprendedor (PAE) — trámites de inicio de actividad. <span class="mono">pae.gob.es</span></li>
+  </ol>
+  <h3>Consulta permanente</h3>
+  <p class="small">Tarifas de pasarelas y plataformas: páginas oficiales de precios de cada proveedor, revisadas en la fecha de uso. Por su volatilidad no se fijan cifras en el texto.</p>
+  <div class="runfoot"><span>Monolith. — Referencia</span><span>25</span></div>
+</section>
+
+<section class="page">
+  <div class="runhead"><span>Monolith.</span><span>Texto de venta</span></div>
+  <p class="kicker">Para la página de producto</p>
+  <h2 style="font-size:22px">Descripción comercial</h2>
+  <div class="rule-dark"></div>
+  <p class="small" style="margin-bottom:16px">Texto listo para publicar. Sin promesas de ingresos ni plazos garantizados.</p>
+  <div style="border:1px solid var(--g2);padding:20px 22px;background:#fcfcfb">
+    <h4 style="margin-top:0">Deja de coleccionar ideas y publica la primera</h4>
+    <p class="small" style="color:#1a1a18">La mayoría de la gente no fracasa en el negocio digital por falta de talento. Fracasa porque construye antes de comprobar y vende antes de explicar. <strong>MONOLITH. La guía digital para principiantes</strong> es un manual de 13 capítulos que lleva ese orden al revés: primero el problema, luego la evidencia, después el producto.</p>
+    <p class="small" style="color:#1a1a18">Aprenderás a encontrar una idea con demanda comprobable, validarla sin gastar dinero, fijar un precio con márgenes que se sostienen, montar una oferta legible y lanzar con un calendario de 30 días. Sin promesas de ingresos pasivos y sin relleno.</p>
+    <p class="small" style="color:#1a1a18"><strong>Incluye cuatro herramientas utilizables:</strong> ficha de investigación de competidores, calculadora de rentabilidad con desglose de comisiones e impuestos, matriz de evaluación de ideas y checklist de lanzamiento de 30 tareas. Más glosario y referencias normativas verificables.</p>
+    <p class="small" style="color:#1a1a18"><strong>Para quién:</strong> principiantes sin experiencia, capital ni empresa registrada. Profesionales que quieren empaquetar lo que ya saben. Autónomos que buscan una segunda línea de ingresos.</p>
+    <p class="small" style="color:#1a1a18;margin-bottom:0"><strong>Formato:</strong> PDF maquetado, 26 páginas, diseño editorial monocromo. Lectura estimada: 2 h 30. Ejecución: 30 días.</p>
+  </div>
+  <h3>Titulares alternativos</h3>
+  <ul class="clean">
+    <li>Tu primera idea, tu primer producto, tu primer negocio digital.</li>
+    <li>El manual que no te promete ingresos: te enseña las cuentas.</li>
+    <li>Validar antes de construir. La guía que casi nadie escribe.</li>
+  </ul>
+  <h3>Notas de posicionamiento</h3>
+  <p class="small">No comparar con «cursos» ni con «métodos». El diferencial es el rigor aritmético y la honestidad sobre lo legal. Evitar cifras de resultados en el titular; si se usan, indicar que son ejemplos.</p>
+  <div class="rule" style="margin-top:30px"></div>
+  <div style="background:var(--ink);color:#fff;padding:26px 24px;margin-top:20px">
+    <p style="font-family:var(--disp);font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:#8f8f8a;margin-bottom:10px">Monolith. — Digital Knowledge Studio</p>
+    <p style="font-family:var(--serif);font-size:26px;line-height:1.15;color:#fff;margin-bottom:8px">Build your next chapter.</p>
+    <p style="font-family:var(--disp);font-size:8.5px;letter-spacing:.26em;text-transform:uppercase;color:#7d7d78">Edición 002 · 2026 · Todos los derechos reservados</p>
+  </div>
+  <div class="runfoot"><span>Monolith. — Contraportada</span><span>26</span></div>
+</section>
+
+</div></body></html>
